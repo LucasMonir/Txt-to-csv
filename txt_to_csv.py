@@ -1,9 +1,5 @@
 import os;
 import csv
-import openpyxl;
-import sys
-
-from pandas import concat
 
 path = os.getcwd();
 input_format ='txt';
