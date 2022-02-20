@@ -1,5 +1,6 @@
 import os;
 import csv
+from traceback import print_tb
 
 path = os.getcwd();
 input_format ='txt';
@@ -39,6 +40,7 @@ def convert_to_csv(files):
         if os.path.isfile(file) and input_format in file_extension :
             read_file(file);
             new_file = f'{path}/{file.split(".")[0]}.{output_format}'
+            print(f'{new_file} saved successfully!');
             write_file(new_file);
 
 def main():
